@@ -61,20 +61,8 @@ public class GamePlayer {
     }
 
     void Run(int incrementX){
-        System.out.print("R/L/U/D to move: ");
-        running = input.next();
-
-        if (running.equals("r")) {
-            positionX += 10;
-        } else if (running.equals("l")) {
-            positionX -= 10;
-        } else if (running.equals("u")) {
-            positionY += 10;
-        } else if (running.equals("d")) {
-            positionY -= 10;
-        } else {
-            positionX = positionX; 
-        }
+        positionX += 10;
+        positionY += 10;
         incrementX = positionX + positionY;
 
         System.out.println("Player still running with current position: " + incrementX);
